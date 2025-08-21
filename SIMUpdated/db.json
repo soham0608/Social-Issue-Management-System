@@ -1,0 +1,287 @@
+{
+  "roles": [
+    {
+      "rid": 1,
+      "rname": "Admin"
+    },
+    {
+      "rid": 2,
+      "rname": "Citizen"
+    },
+    {
+      "rid": 3,
+      "rname": "Zone Operator"
+    }
+  ],
+  "users": [
+    {
+      "uid": 1,
+      "uname": "admin_user",
+      "password": "$2b$10$hash1234567890",
+      "rid": 1,
+      "phone_no": "9876543210",
+      "email": "admin@socialissue.com",
+      "status": "Active"
+    },
+    {
+      "uid": 2,
+      "uname": "john_doe",
+      "password": "$2b$10$hash2345678901",
+      "rid": 2,
+      "phone_no": "9876543211",
+      "email": "john.doe@email.com",
+      "status": "Active"
+    },
+    {
+      "uid": 3,
+      "uname": "jane_smith",
+      "password": "$2b$10$hash3456789012",
+      "rid": 2,
+      "phone_no": "9876543212",
+      "email": "jane.smith@email.com",
+      "status": "Active"
+    },
+    {
+      "uid": 4,
+      "uname": "operator_mumbai",
+      "password": "$2b$10$hash4567890123",
+      "rid": 3,
+      "phone_no": "9876543213",
+      "email": "operator.mumbai@gov.in",
+      "status": "Active"
+    },
+    {
+      "uid": 5,
+      "uname": "operator_pune",
+      "password": "$2b$10$hash5678901234",
+      "rid": 3,
+      "phone_no": "9876543214",
+      "email": "operator.pune@gov.in",
+      "status": "Active"
+    }
+  ],
+  "areas": [
+    {
+      "area_id": 1,
+      "area_name": "Andheri West",
+      "pincode": "400058"
+    },
+    {
+      "area_id": 2,
+      "area_name": "Bandra East",
+      "pincode": "400051"
+    },
+    {
+      "area_id": 3,
+      "area_name": "Koregaon Park",
+      "pincode": "411001"
+    },
+    {
+      "area_id": 4,
+      "area_name": "Viman Nagar",
+      "pincode": "411014"
+    },
+    {
+      "area_id": 5,
+      "area_name": "Powai",
+      "pincode": "400076"
+    }
+  ],
+  "citizens": [
+    {
+      "cid": 1,
+      "uid": 2,
+      "fname": "John",
+      "lname": "Doe",
+      "address": "123 Main Street, Building A, Flat 101",
+      "area_id": 1,
+      "gender": "Male",
+      "dob": "1990-05-15",
+      "aadhar_no": 123456789012
+    },
+    {
+      "cid": 2,
+      "uid": 3,
+      "fname": "Jane",
+      "lname": "Smith",
+      "address": "456 Park Avenue, Tower B, Floor 5",
+      "area_id": 2,
+      "gender": "Female",
+      "dob": "1985-08-22",
+      "aadhar_no": 234567890123
+    },
+    {
+      "cid": 3,
+      "uid": null,
+      "fname": "Rahul",
+      "lname": "Sharma",
+      "address": "789 MG Road, Apartment 302",
+      "area_id": 3,
+      "gender": "Male",
+      "dob": "1992-12-10",
+      "aadhar_no": 345678901234
+    },
+    {
+      "cid": 4,
+      "uid": null,
+      "fname": "Priya",
+      "lname": "Patel",
+      "address": "321 FC Road, House No 45",
+      "area_id": 4,
+      "gender": "Female",
+      "dob": "1988-03-18",
+      "aadhar_no": 456789012345
+    }
+  ],
+  "zone_operators": [
+    {
+      "operator_id": 1,
+      "uid": 4,
+      "designation": "Senior Zone Operator",
+      "area_id": 1,
+      "joined_date": "2022-01-15"
+    },
+    {
+      "operator_id": 2,
+      "uid": 5,
+      "designation": "Zone Operator",
+      "area_id": 3,
+      "joined_date": "2023-03-20"
+    },
+    {
+      "operator_id": 3,
+      "uid": null,
+      "designation": "Assistant Zone Operator",
+      "area_id": 2,
+      "joined_date": "2023-06-10"
+    }
+  ],
+  "issue_categories": [
+    {
+      "issue_id": 1,
+      "description": "Water Supply Issues"
+    },
+    {
+      "issue_id": 2,
+      "description": "Electricity Problems"
+    },
+    {
+      "issue_id": 3,
+      "description": "Road and Infrastructure"
+    },
+    {
+      "issue_id": 4,
+      "description": "Garbage Collection"
+    },
+    {
+      "issue_id": 5,
+      "description": "Street Lighting"
+    },
+    {
+      "issue_id": 6,
+      "description": "Sewage and Drainage"
+    },
+    {
+      "issue_id": 7,
+      "description": "Public Transportation"
+    },
+    {
+      "issue_id": 8,
+      "description": "Noise Pollution"
+    }
+  ],
+  "citizen_complaints": [
+    {
+      "complaint_id": 1,
+      "cid": 1,
+      "issue_id": 1,
+      "area_id": 1,
+      "description": "No water supply for the past 3 days in our building. Multiple families are affected.",
+      "submitted_at": "2024-07-20T09:30:00"
+    },
+    {
+      "complaint_id": 2,
+      "cid": 2,
+      "issue_id": 3,
+      "area_id": 2,
+      "description": "Large pothole on the main road causing traffic issues and vehicle damage.",
+      "submitted_at": "2024-07-21T14:15:00"
+    },
+    {
+      "complaint_id": 3,
+      "cid": 1,
+      "issue_id": 4,
+      "area_id": 1,
+      "description": "Garbage not collected for over a week. Stray dogs and bad smell in the area.",
+      "submitted_at": "2024-07-22T08:45:00"
+    },
+    {
+      "complaint_id": 4,
+      "cid": 3,
+      "issue_id": 2,
+      "area_id": 3,
+      "description": "Frequent power cuts during peak hours affecting work from home setup.",
+      "submitted_at": "2024-07-22T16:20:00"
+    },
+    {
+      "complaint_id": 5,
+      "cid": 4,
+      "issue_id": 5,
+      "area_id": 4,
+      "description": "Street lights not working for past 2 weeks. Safety concern for residents.",
+      "submitted_at": "2024-07-23T19:10:00"
+    },
+    {
+      "complaint_id": 6,
+      "cid": 2,
+      "issue_id": 6,
+      "area_id": 2,
+      "description": "Sewage overflow near residential complex during monsoon.",
+      "submitted_at": "2024-07-24T07:30:00"
+    }
+  ],
+  "complaint_status": [
+    {
+      "complaint_id": 1,
+      "status": "In Progress",
+      "updated_at": "2024-07-21T10:15:00",
+      "handled_by": 1,
+      "note": "Water department notified. Repair work scheduled for tomorrow."
+    },
+    {
+      "complaint_id": 2,
+      "status": "Submitted",
+      "updated_at": "2024-07-21T14:15:00",
+      "handled_by": null,
+      "note": null
+    },
+    {
+      "complaint_id": 3,
+      "status": "Resolved",
+      "updated_at": "2024-07-23T11:30:00",
+      "handled_by": 1,
+      "note": "Garbage collection resumed. Regular schedule restored."
+    },
+    {
+      "complaint_id": 4,
+      "status": "In Progress",
+      "updated_at": "2024-07-23T09:45:00",
+      "handled_by": 2,
+      "note": "Electrical maintenance team assigned. Working on transformer issues."
+    },
+    {
+      "complaint_id": 5,
+      "status": "Submitted",
+      "updated_at": "2024-07-23T19:10:00",
+      "handled_by": null,
+      "note": null
+    },
+    {
+      "complaint_id": 6,
+      "status": "Submitted",
+      "updated_at": "2024-07-24T07:30:00",
+      "handled_by": null,
+      "note": null
+    }
+  ]
+}
